@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquri.css" />
+</head>
+<body>
+    
+    <!--Nav ber section-->
+    <nav id="desktop-nav">
+        <div class="logo">Suman</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Suman</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+
+      <!--Home section start-->
+    <section id="home">
+        <div class="section__pic-container">
+          <img  class="suman" src="./assest/Photo.jpg" alt="Suman Das profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Suman Das</h1>
+          <div class="section__text__p2">And I'm a <span class="typing"></span></div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assest/SumanResume..pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assest/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/suman-das-435896209/'"
+            />
+            <img
+              src="./assest/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/Suman-Das-BUIE'"
+            />
+          </div>
+        </div>
+      </section>
+
+       <!--About section-->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img src="./assest/SumanPh-2.jpg" alt="Profile picture" class="about-pic" />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="./assest/experience.png" alt="Experience icon"  class="icon"/>
+                <h3>Experience</h3>
+                <h5>Fresher<br />Frontend Development</h5>
+              </div>
+              <div class="details-container">
+                <img src="./assest/education.png" alt="Education icon" class="icon"/>
+                <h3>Education</h3>
+                <h5>B.Tech Bachelors Degree<br />Computer Science & Engineering</h5>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                An enthusiastic fresher with highly motivated and leadership skills, holding a
+                Bachelor of Engineering degree in Computer Science & Engineering. Expert in
+                implementing each step of the project with a passion for learning new
+                technologies and methodologies. Committed to innovation and improving existing
+                technologies.              
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Experience section-->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>HTML</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>CSS</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>JavaScript</h3>
+                    <h4>Basic</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon"class="icon"/>
+                  <div>
+                    <h3>React Js</h3>
+                    <h4>Basic</h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Core Java</h3>
+                    <h4>Advanced</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>J2EE</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Hibernate ORM</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>SQL</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>MySQL</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Spring</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assest/checkmark.png" alt="Experience icon" class="icon"/>
+                  <div>
+                    <h3>Git</h3>
+                    <h4>Intermediate</h4>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!--Projects section-->
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assest/Project1.png" alt="Project 1" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Suman-Das-BUIE'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Suman-Das-BUIE'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assest/Project2.png" alt="Project 2" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Suman-Das-BUIE'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Suman-Das-BUIE'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assest/Project3.png" alt="Project 3" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Suman-Das-BUIE'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Suman-Das-BUIE'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact Section-->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assest/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">das398352@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assest/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/suman-das-435896209/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer Section-->
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Suman Das. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+  
+</body>
+</html>
